@@ -1,4 +1,9 @@
-body {
+* {
+    margin: 0;
+    padding: 0;
+}
+    
+    body {
     /*teal body font */
     color: #39a6b2;
     font-family: Helvitica, Arial, Helvetica, sans-serif;
