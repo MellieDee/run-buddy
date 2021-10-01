@@ -78,6 +78,7 @@ section {
   background-position: center;
   position: relative;
 }
+/* Hero Style End  */
 
 .hero-form {
 	border: solid 3px #024e76;
@@ -91,44 +92,34 @@ section {
 }
 
 .hero-form h3 {
-    font-size: 24px;
-    margin: 0;
+  font-size: 24px;
+  margin: 0;
 }
 
 .hero-form p {
-    margin: 5px 0 15px 0;
+  margin: 5px 0 15px 0;
 }
 
 .form-input {
-    border: 1px solid #024e76;
-    display: block;
-    padding: 7px 15px;
-    font-size: 16px;
-    color: #024e76;
-    width: 100%;
-    margin-bottom: 15px;
+  border: 1px solid #024e76;
+  display: block;
+  padding: 7px 15px;
+  font-size: 16px;
+  color: #024e76;
+  width: 100%;
+  margin-bottom: 15px;
 }
 
 .hero-form label {
-    margin: 0 5px;
+  margin: 0 5px;
 }
 
 .hero-form button {
-    background-color: #024e76;
-    color: #fce138;
-    padding: 10px 10px;
-    width:120px;
-    border: none;
-    font-size: 16px;
-    margin: 0;
-}
-
-.hero-form input[type="radio"] {
-    margin: 5px 0 5px 0;
-}
-
-.hero-form input[type="checkbox"] {
-    margin: 5px 0 5px 0;
+  color: #fce138;
+  background-color: #024e76;
+  border: none;
+  padding: 10px 10px;
+  font-size: 16px;
 }
 
 /*  --------- What WE DO-------------  */
@@ -152,7 +143,6 @@ section {
 }
 
 /* intro h2 remaining property */
-
 .steps div {
     margin-bottom: 80px;
 }
@@ -233,6 +223,7 @@ section {
 	text-align: left;
 }
 
+/* Reach Out Styles Start */
 .contact {
 	text-align: center;
 	background: #024e76;
@@ -240,18 +231,6 @@ section {
 
 .contact h2 {
 	color:#fce138;	
-}
-.contact-info h3 {
-	font-size: 32px;
-	margin-bottom: 8px;
-	color:#fce138;
-}
-
-.contact-info p, contact-info address {
-	font-size: 20px;
-	line-height: 1.5;
-	margin: 20px 0;
-	font-style: normal;
 }
 
 .contact-info iframe {
@@ -268,8 +247,21 @@ section {
 	color: white;
 }
 
-.contact-info a {
+contact-info h3 {
+	font-size: 32px;
 	color:#fce138;
 }
 
+.contact-info p, contact-info address {
+  margin: 20px 0;
+	line-height: 1.5;
+  font-size: 20px;
+	font-style: normal;
+}
+
+.contact-info a {
+	color:#fce138;
+}
 /*   Reach Out Style Ends   */
+
+
