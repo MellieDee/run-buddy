@@ -201,6 +201,9 @@ font-size: 55px;
   align-items: center;
 }
 
+.step-text {
+  flex: 12;
+}
 .step-text p {
     color: #39a6b2;
     font-size: 18px;
@@ -210,7 +213,6 @@ font-size: 55px;
   font-size: 26px;
   line-height: 1.5;
   color: #024e76;
-  flex: 12;
 }
 
 .section-title {
@@ -233,7 +235,7 @@ font-size: 55px;
 
 /* Trainer Section  Styles  */
 .trainers {
-  
+
 }
 .trainer {
     width:900px;
