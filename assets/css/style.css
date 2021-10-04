@@ -90,6 +90,15 @@ section {
 }
 /* Hero Style End  */
 
+.grabber h2 {
+color :#fce138;
+font-style: italic;
+font-size: 38px;
+}
+
+.grabber p {
+  color: white;
+}
 .hero-form {
 	border: solid 3px #024e76;
 	background-color:#fce138;
