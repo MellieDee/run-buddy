@@ -84,30 +84,41 @@ section {
   background-size: cover;
   background-position: center;
   position: relative;
+  justify-content: space-between;
   z-index: 1;
-  /* top: 0; */
+  top: 20px;
   /* margin: 0; */
 }
 /* Hero Style End  */
 
+.grabber {
+  position: relative;
+  /* justify-content:space-evenly; */
+  width: 500px;
+  /* padding: 20px; */
+  padding: 0 50px 50px;
+  bottom: 120ps;
+  /* margin: 0 auto 30px auto; */;
+}
 .grabber h2 {
 color :#fce138;
 font-style: italic;
 font-size: 38px;
 }
-
 .grabber p {
   color: white;
 }
 .hero-form {
 	border: solid 3px #024e76;
 	background-color:#fce138;
-  padding: 20px;
+  padding:20px;
   width: 500px;
+  /* height: 350px; */
 	color: #024e76;
   position: absolute;
   bottom: 120px;
   right: 140px;
+
 }
 
 .hero-form h3 {
