@@ -17,15 +17,12 @@ header {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  /*width: 100%;
-  z-index: 2; */
 }
 header h1 {
   font-weight: bold;
   margin: 0;
 	font-size: 36px;	
 	color: #fce138;
-
 }
 header a {
 	text-decoration: none;
@@ -47,7 +44,6 @@ header nav ul li a {
   font-weight: lighter;
   font-size: 1.55vw;
 }
-
 /*   Header Ends   */
 
 
@@ -74,11 +70,10 @@ footer a {
 }
 /*   Footer Ends   */
 
-
-
 section {
   padding: 60px;
 }
+
 
 /*   Hero Starts   */
 .hero {
@@ -88,9 +83,6 @@ section {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  /* z-index: 1;
-  top: 20px; */
-  /* margin: 0; */
 }
 /* Hero Style End  */
 
@@ -120,16 +112,13 @@ font-size: 55px;
   margin: 3.5%;
 	color: #024e76;
 }
-
 .hero-form h3 {
   font-size: 24px;
   margin: 0;
 }
-
 .hero-form p {
   margin: 5px 0 15px 0;
 }
-
 .form-input {
   border: 1px solid #024e76;
   display: block;
@@ -139,11 +128,9 @@ font-size: 55px;
   width: 100%;
   margin-bottom: 15px;
 }
-
 .hero-form label {
   margin: 0 5px;
 }
-
 .hero-form button {
   color: #fce138;
   background-color: #024e76;
@@ -151,6 +138,7 @@ font-size: 55px;
   padding: 10px 10px;
   font-size: 16px;
 }
+/*   Hero Form Ends   */
 
 /*  --------- What WE DO-------------  */
 .intro p {
