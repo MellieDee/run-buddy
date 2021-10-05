@@ -5,7 +5,6 @@
 }
    
 body {
-  /*teal body font */
   color: #39a6b2;
   font-family: Helvetica, Arial, sans-serif;
 }
@@ -35,6 +34,7 @@ header a {
 header nav {
 	margin: 7px 0;
 }
+
 header nav ul {
   display: flex;
   flex-wrap: wrap;
@@ -61,15 +61,18 @@ footer {
   flex-wrap: wrap; 
   width: 100%;
 }
+
 footer h2 {
   color: #024e76;
   font-size: 30px;
   margin: 0;
 }
+
 footer div {
   line-height: 1.5;
   text-align: right;
 }
+
 footer a {
   color: #024e76;
 }
@@ -145,14 +148,14 @@ font-size: 55px;
 /*   HERO Ends   */
 
 /*  --------- WHAT WE DO  Starts ----  */
-.intro p {
+/*.intro p {
     line-height: 1.7;
     color: #39a6b2;
     width: 80%;
     font-size: 20px;
     margin: 0 auto;
     text-align: center;
-}
+}*/
 
 /*  General Heading Styles Start  */
 .section-title {
@@ -195,6 +198,13 @@ font-size: 55px;
     flex: 1 30%;
 }
 
+.step-info {
+  flex: 2 70%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
 .step-img {
   flex: 1 12%;
   margin-right: 20px;
@@ -202,12 +212,6 @@ font-size: 55px;
 
 .step-img img {
   max-width: 100%;
-}
-.step-info {
-  flex: 2 70%;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
 }
 
 .step-text {
@@ -283,7 +287,7 @@ font-size: 55px;
 }
 
 .contact-infor iframe {
-  height: 400px
+  height: 400px;
 }
 
 .contact-info div {
@@ -295,16 +299,11 @@ font-size: 55px;
   font-size: 32px;
 }
 
-.contact-info p,
-.contact-info address {
+.contact-info p, .contact-info address {
   margin: 20px 0;
 	line-height: 1.5;
   font-size: 16px;
 	font-style: normal;
-}
-
-.contact-info a {
-	color:#fce138;
 }
 
 .contact-form input, .contact-form textarea {
@@ -324,13 +323,26 @@ font-size: 55px;
   background-color: #fce138;
   color: #024e76;
   text-align: center;
-  padding: 15px;
+  padding: 15px 0;
   font-size: 16px;
+}
+
+
+.contact-info a {
+	color:#fce138;
 }
 /*   RAEACH OUT  Ends   */
 
 
 /*    UTILITY RULES   */
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
 .flex-row {
   display:flex;
 }
@@ -345,34 +357,43 @@ font-size: 55px;
      padding-bottom: 0;
      justify-content: center;
    }
+
    header h1 {
      width: 100%;
      text-align: center;
    }
+
     header nav ul {
      margin-top: 20px;
      width: 100%;
     justify-content: center;
    }
+
    header nav ul li a  {
      font-size: 20px;
    }
+
    footer h2, footer div {
      text-align: center;
      width: 100%;
    }
+
    .hero-cta, .hero-form {
      width: 100%;
    }  
+
    .hero-cta {
      text-align: center;
    }
+
    .section-title {
      width: 80%;
    }
+
    .trainer {
      flex: 0 70%;
    }
+
    .contact-info iframe {
      flex: 1 100%;
    }
@@ -406,7 +427,7 @@ font-size: 55px;
   }
 
   .step-text {
-    flex:100%;
+    flex: 100%;
   }
 }
 
@@ -436,6 +457,10 @@ font-size: 55px;
 
   .contact-info > * {
     flex: 0 100%;
+  }
+
+  .contact-form {
+    order: 3;
   }
 
 }
