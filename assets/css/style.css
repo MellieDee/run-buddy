@@ -1,60 +1,65 @@
 * {
+  box-sizing: border-box;
   margin: 0;
 	padding: 0;
-  box-sizing: border-box;
 }
-    
+   
 body {
   /*teal body font */
   color: #39a6b2;
   font-family: Helvetica, Arial, sans-serif;
 }
 
-/*  Header Starts  */
+
+/*  HEADER / NAV BAR Starts  */
 header {
   padding: 20px 35px;
-  background-color: transparent;
+  background-color: #39a6b2;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
+
 header h1 {
   font-weight: bold;
   margin: 0;
 	font-size: 36px;	
 	color: #fce138;
 }
+
 header a {
 	text-decoration: none;
 	color: #fce138;
 }
+
 header nav {
 	margin: 7px 0;
+}
+header nav ul li {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
   list-style: none;
 }
-header nav ul li {
-  display: inline;
-}
+
 header nav ul li a {
-  margin: 0 30px;
+  padding: 10px 15px;
   font-weight: lighter;
   font-size: 1.55vw;
 }
 /*   Header Ends   */
+/*   HEADER /NAVBAR Ends   */
 
 
-/*   Footer Starts   */
+/*   FOOTER Starts   */
 footer {
   background: #fce138;
-  width: 100%;
   padding: 40px 35px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap; 
+  width: 100%;
 }
 footer h2 {
   color: #024e76;
@@ -83,6 +88,7 @@ section {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  align-items: flex-start;
 }
 /* Hero Style End  */
 
@@ -92,10 +98,9 @@ section {
   margin: 3.5%;
   color: #fff;
   font-size: 18px;
-  line-height: 1.3;
-  display: flex;
-  justify-content: center;
+  line-height: 1.2;
 }
+
 .hero-cta h2 {
 color :#fce138;
 font-style: italic;
@@ -150,6 +155,23 @@ font-size: 55px;
     text-align: center;
 }
 
+/*  General Heading Styles Start  */
+.section-title {
+	font-size: 48px;
+	color: #024e76;
+	border-bottom: 3px solid;
+  padding-bottom: 20px;
+  text-align: center;
+  margin: 0 auto 35px auto;
+  width: 50%;
+}
+.primary-border {
+	border-color: #fce138;
+}
+.secondary-border {
+	border-color: #39a6b2;
+}
+/*  General Heading Styles End  */
 
 /*  -------- What You DO-----------  */
 /*  higher level formating first then specific */
@@ -203,23 +225,6 @@ font-size: 55px;
   color: #024e76;
 }
 
-.section-title {
-	font-size: 55px;
-	color: #024e76;
-	border-bottom: 3px solid;
-  padding-bottom: 20px;
-  text-align: center;
-  margin: 0 auto 35px auto;
-  width: 50%;
-}
-
-.primary-border {
-	border-color: #fce138;
-}
-/* steps remaining property*/
-.secondary-border {
-	border-color: #39a6b2;
-}
 
 /* MEET THE TRAINERS Starts  */
 .trainers {
@@ -262,17 +267,14 @@ font-size: 55px;
 .contact {
 	background: #024e76;
 }
-
 .contact h2 {
 	color:#fce138;	
 }
-
 .contact-info {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-
 .contact-info > * {
   flex: 1;
   margin: 15px;
@@ -280,16 +282,13 @@ font-size: 55px;
 .contact-info iframe {
 
 }
-
 .contact-info div {
 	color: white;
 }
-
 .contact-info h3 {
   color:#fce138;
   font-size: 32px;
 }
-
 .contact-info p,
 .contact-info address {
   margin: 20px 0;
@@ -297,11 +296,9 @@ font-size: 55px;
   font-size: 16px;
 	font-style: normal;
 }
-
 .contact-info a {
 	color:#fce138;
 }
-
 .contact-form input, .contact-form textarea {
   border: 1 px solid, #024e76;
   display: block;
@@ -312,7 +309,6 @@ font-size: 55px;
   margin-bottom: 15px;
   margin-top: 5px;
 }
-
 .contact-form button {
   width: 100%;
   border: none;
@@ -326,15 +322,71 @@ font-size: 55px;
 
 
 /*   UTILITY RULES   */
-
 /* .text-left {
 	text-align: left;
 }
-
 .text-right {
   text-align: right;
 } */
 
 .flex-row {
   display:flex;
+}
+
+/*     MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER
+ /*this will be applied on any screen smaller than 980px
+    Because both the <header> and <footer> elements are flex containers, we only had to tell both of their children to be 100% of the width. Because flex-wrap is turned on to wrap overflowing content, it allows both children to get their own row one on top of the other. The only thing we need to do then is adjust their justification properties to center them on the page, and adjust some font sizes and spacing to tighten up the design.*/
+@media screen and (max-width: 980px) {
+   header {
+     padding-bottom: 0;
+     justify-content: center;
+   }
+   header h1 {
+     width: 100%;
+     text-align: center;
+   }
+    header nav ul {
+     margin-top: 20px;
+     width: 100%;
+    justify-content: center;
+   }
+   header nav ul li a  {
+     font-size: 20px;
+   }
+   footer h2, footer div {
+     text-align: center;
+     width: 100%;
+   }
+   .hero-cta, .hero-form {
+     width: 100%;
+   }  
+   .hero-cta {
+     text-align: center;
+   }
+   .section-title {
+     width: 80%;
+   }
+   .trainer {
+     flex: 0 70%;
+   }
+   .contact-info iframe {
+     flex: 1 100%;
+   }
+
+}
+
+/*  MEDIA QUERY FOR TBLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+  header h1 {
+    /* this will be applied on any screen between 768px and 575px*/
+ 
+  }
+}
+
+/*MEDIA QUERY FOR MBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+  header h1 {
+    /*this will be applied on any screen smaller than 575px*/
+  
+  }
 }
