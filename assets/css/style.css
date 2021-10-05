@@ -90,7 +90,6 @@ section {
   flex-wrap: wrap;
   align-items: flex-start;
 }
-/* Hero Style End  */
 
 .hero-cta {
   width: 35%;
@@ -143,9 +142,9 @@ font-size: 55px;
   padding: 10px 10px;
   font-size: 16px;
 }
-/*   Hero Form Ends   */
+/*   HERO Ends   */
 
-/*  --------- What WE DO-------------  */
+/*  --------- WHAT WE DO  Starts ----  */
 .intro p {
     line-height: 1.7;
     color: #39a6b2;
@@ -173,8 +172,8 @@ font-size: 55px;
 }
 /*  General Heading Styles End  */
 
+
 /*  -------- What You DO-----------  */
-/*  higher level formating first then specific */
 .steps {
     background: #fce138
 }
@@ -224,6 +223,7 @@ font-size: 55px;
   line-height: 1.5;
   color: #024e76;
 }
+/*   WHAT YOU DO Ends   */
 
 
 /* MEET THE TRAINERS Starts  */
@@ -258,12 +258,14 @@ font-size: 55px;
     font-size: 22px;
     margin-bottom: 15px;   
 }
+
 .trainer-bio p {
     font-size: 17px;
 }
+/*   MEET THE TRAINERS Ends   */
 
 
-/* REACH OUT Starts  */
+/*   REACH OUT Starts  */
 .contact {
 	background: #024e76;
 }
@@ -285,10 +287,12 @@ font-size: 55px;
 .contact-info div {
 	color: white;
 }
+
 .contact-info h3 {
   color:#fce138;
   font-size: 32px;
 }
+
 .contact-info p,
 .contact-info address {
   margin: 20px 0;
@@ -296,9 +300,11 @@ font-size: 55px;
   font-size: 16px;
 	font-style: normal;
 }
+
 .contact-info a {
 	color:#fce138;
 }
+
 .contact-form input, .contact-form textarea {
   border: 1 px solid, #024e76;
   display: block;
@@ -309,6 +315,7 @@ font-size: 55px;
   margin-bottom: 15px;
   margin-top: 5px;
 }
+
 .contact-form button {
   width: 100%;
   border: none;
@@ -318,24 +325,19 @@ font-size: 55px;
   padding: 15px;
   font-size: 16px;
 }
-/*   Reach Out Style Ends   */
+/*   RAEACH OUT  Ends   */
 
 
-/*   UTILITY RULES   */
-/* .text-left {
-	text-align: left;
-}
-.text-right {
-  text-align: right;
-} */
-
+/*    UTILITY RULES   */
 .flex-row {
   display:flex;
 }
 
-/*     MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER
- /*this will be applied on any screen smaller than 980px
-    Because both the <header> and <footer> elements are flex containers, we only had to tell both of their children to be 100% of the width. Because flex-wrap is turned on to wrap overflowing content, it allows both children to get their own row one on top of the other. The only thing we need to do then is adjust their justification properties to center them on the page, and adjust some font sizes and spacing to tighten up the design.*/
+
+/*     MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER   */
+ 
+/* this will be applied on any screen smaller than 980px   */
+    
 @media screen and (max-width: 980px) {
    header {
      padding-bottom: 0;
@@ -375,11 +377,34 @@ font-size: 55px;
 
 }
 
-/*  MEDIA QUERY FOR TBLETS AND SMALLER */
+/*  MEDIA QUERY FOR TBLETS AND SMALLER   768px */
+  /* this will be applied on any screen between 768px and 575px*/
+
 @media screen and (max-width: 768px) {
-  header h1 {
-    /* this will be applied on any screen between 768px and 575px*/
- 
+  section {
+    padding: 30px 15px;
+  }
+
+  ,step h3 {
+    flex: 1 100%
+    text-align: center;
+  }
+
+  .step-info {
+    flex: 2 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .step-img {
+    flex: 0 32%;
+    margin-right: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .step-text {
+    flex:100%;
   }
 }
 
