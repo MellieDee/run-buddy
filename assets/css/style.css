@@ -24,10 +24,6 @@ header {
   background-size: cover;
   background-position: 80%;
   background-attachment: fixed;
-
-
-
-
 }
 
 header h1 {
@@ -60,6 +56,13 @@ header nav ul li a {
   font-weight: lighter;
   font-size: 1.55vw;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header nav ul li a:hover {
+  background: #fce138;
+  color: #024e76;
+  border-radius: 15px;
+  text-shadow: none;
 }
 /*   Header Ends   */
 /*   HEADER /NAVBAR Ends   */
@@ -136,13 +139,16 @@ text-shadow: 0 0  10px rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   border-radius: 15px;
 }
+
 .hero-form h3 {
   font-size: 24px;
   margin: 0;
 }
+
 .hero-form p {
   margin: 5px 0 15px 0;
 }
+
 .form-input {
   border: 1px solid #024e76;
   display: block;
@@ -152,17 +158,28 @@ text-shadow: 0 0  10px rgba(0, 0, 0, 0.5);
   width: 100%;
   margin-bottom: 15px;
   border-radius: 10px;
+  background-color: rgba(255,255,255, 0.75);
+}
+
+.form-input:focus {
+  background-color: rgba(255,255,255, 1);
+  outline: none;
 }
 .hero-form label {
   margin: 0 5px;
 }
+
 .hero-form button {
   color: #fce138;
   background-color: #024e76;
   border: none;
   padding: 10px 10px;
-  font-size: 16px;
+  font-size: 16px;  
   border-radius: 10px;
+}
+
+.hero-form button:hover {
+  background-color: #39a6b2;
 }
 /*   HERO Ends   */
 
@@ -246,6 +263,17 @@ text-shadow: 0 0  10px rgba(0, 0, 0, 0.5);
   line-height: 1.5;
   color: #024e76;
 }
+
+.step:last-child {
+  border-bottom: none;
+}
+
+/* 
+.step:nth-child(even) {
+  border-bottom: 1px solid #39a6b2;
+} */
+
+
 /*   WHAT YOU DO Ends   */
 
 
@@ -335,6 +363,12 @@ text-shadow: 0 0  10px rgba(0, 0, 0, 0.5);
   margin-bottom: 15px;
   margin-top: 5px;
   border-radius: 10px;
+  background-color: rgba(255,255,255,0.75);
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+  background-color: rgba(255, 255, 255, 1);
+  outline: none;
 }
 
 .contact-form button {
@@ -348,6 +382,10 @@ text-shadow: 0 0  10px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
 }
 
+.contact-form button:hover {
+  color: #fce138;
+  background-color: #39a6b2;
+}
 
 .contact-info a {
 	color:#fce138;
